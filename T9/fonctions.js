@@ -14,10 +14,17 @@ function calculerMoyenne(tableau){
     return somme/tableau.length;
 }
 
-function trouverMaximum(tableau){}
+//recherche et renvoie la plus grande note.
+function trouverMaximum(tableau){
+    let max = tableau[0];
+    for(let i=1; i < tableau.length; i++){
+        if(max < tableau[i])
+            max = tableau[i];
+    }
+    return max;
+}
 
-let groupeA = [12, 14, 16];
-let groupeB = [10, 18, 11, 13];
+let notes = [15, 12, 18, 11];
 
-console.log("le moyennes de groupe A est = ",calculerMoyenne(groupeA));
-console.log("le moyennes de groupe B est = ",calculerMoyenne(groupeB));
+console.log("le moyennes de la notes est : = ",calculerMoyenne(notes));
+console.log("la note maximale est : = ",trouverMaximum(notes));
