@@ -26,5 +26,9 @@ function trouverMaximum(tableau){
 
 let notes = [15, 12, 18, 11];
 
-console.log("le moyennes de la notes est : = ",calculerMoyenne(notes));
-console.log("la note maximale est : = ",trouverMaximum(notes));
+let moyenne = calculerMoyenne(notes);
+let noteMax = trouverMaximum(notes);
+
+console.log("=== BILAN DE CLASSE ===");
+console.log("Moyenne : " + moyenne + " / 20");
+console.log("Meilleure note : " + noteMax + " / 20");
